@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Fizjoterapia i trening personalny Płaza - Karolina Kośmider</title>
+<meta name="description" content="Karolina Kośmider - fizjoterapeutka i trenerka personalna w Płazie. Terapia bólu (P-DTR, masaż tkanek głębokich), rozejście mięśnia prostego brzucha po porodzie, trening personalny i praca z emocjami.">
+<meta name="theme-color" content="#070808">
+<link rel="icon" href="img/logo.png">
+<link rel="preload" href="fonts/dmserif-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" imagesrcset="img/hero-800.webp 800w, img/hero-1400.webp 1400w, img/hero-2000.webp 2000w, img/hero-2800.webp 2800w" imagesizes="(max-width:860px) 100vw, 150svh" fetchpriority="high">
+<style>
+@font-face{font-family:'DM Serif Display';font-weight:400;font-display:swap;src:url(fonts/dmserif-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'DM Serif Display';font-weight:400;font-display:swap;src:url(fonts/dmserif-latin-ext.woff2) format('woff2');unicode-range:U+0100-02AF,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B2,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--czern:#0B0B0B;--studio:#070808;--szary:#F1F2F4;--linia:#DADDE2;--tekst:#151515;--tekst2:#4E5258;--h:68px;--wrap:min(1400px,100% - 2*clamp(16px,4.2vw,72px))}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--h) + 8px);-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--tekst);font:400 17px/1.62 "Manrope",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;line-height:1.08;margin:0;letter-spacing:-.005em}
+.wrap{width:var(--wrap);margin-inline:auto}
+.pien{display:inline-block;width:.32em;height:1.05em;vertical-align:-.1em;margin-right:.36em;fill:currentColor}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:52px;padding:0 28px;font:700 16px/1 "Manrope",sans-serif;text-decoration:none;border:2px solid currentColor;border-radius:0;cursor:pointer;transition:background .2s,color .2s}
+.btn-bialy{background:#fff;color:var(--czern);border-color:#fff}
+.btn-bialy:hover{background:transparent;color:#fff}
+.btn-czarny{background:var(--czern);color:#fff;border-color:var(--czern)}
+.btn-czarny:hover{background:#fff;color:var(--czern)}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;height:var(--h);background:#fff;border-bottom:1px solid var(--linia)}
+.top .wrap{height:100%;display:flex;align-items:center;gap:24px}
+.marka{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+.marka img{width:auto;height:40px}
+.marka b{font:400 22px/1 'DM Serif Display',serif;display:block}
+.marka small{display:block;font-size:12.5px;color:var(--tekst2);margin-top:4px;letter-spacing:.01em}
+.menu{margin-left:auto;display:flex;align-items:center;gap:clamp(14px,1.7vw,30px)}
+.menu a{text-decoration:none;font-weight:600;font-size:15px;padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover{border-color:currentColor}
+.top-tel{display:flex;align-items:center;gap:8px;font-weight:800;font-size:16px;text-decoration:none;padding:10px 16px;background:var(--czern);color:#fff;flex:none}
+.top-tel svg{width:16px;height:16px}
+#burger{display:none;margin-left:auto;width:46px;height:46px;border:0;background:none;padding:11px;cursor:pointer}
+#burger span{display:block;height:2px;background:var(--czern);margin:6px 0;transition:transform .25s,opacity .2s}
+.top.otw #burger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.top.otw #burger span:nth-child(2){opacity:0}
+.top.otw #burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* pierwszy ekran */
+.hero{position:relative;background:var(--studio);color:#fff;min-height:calc(100svh - var(--h));display:flex;overflow:hidden}
+.hero-foto{position:absolute;left:0;top:0;height:100%;aspect-ratio:3/2;margin:0;-webkit-mask-image:linear-gradient(to right,#000 80%,transparent);mask-image:linear-gradient(to right,#000 80%,transparent)}
+.hero-foto img{width:100%;height:100%;object-fit:cover}
+.hero-in{position:relative;margin-left:auto;margin-right:clamp(24px,6vw,150px);width:min(640px,46%);padding:clamp(40px,14vh,190px) 0 48px}
+.hero h1{font-size:clamp(38px,3.3vw,64px)}
+.h-lead{font-size:clamp(17px,1.15vw,21px);line-height:1.55;color:#D9DBDD;margin:22px 0 32px;max-width:34em}
+.h-lead b{color:#fff;font-weight:700}
+
+/* sekcje */
+section{padding:clamp(64px,8vw,128px) 0}
+.szary{background:var(--szary)}
+.ciemna{background:var(--czern);color:#fff}
+h2{font-size:clamp(30px,3vw,52px);max-width:20em}
+.wstep{font-size:clamp(17px,1.1vw,20px);color:var(--tekst2);max-width:44em;margin:20px 0 0}
+.ciemna .wstep{color:#C9CBCE}
+
+/* kafle */
+.kafle{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.6vw,28px);margin-top:clamp(36px,4vw,60px)}
+.kafel{position:relative;display:block;text-decoration:none;color:#fff;background:var(--czern);overflow:hidden}
+.kafel img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.kafel:hover img{transform:scale(1.03)}
+.kafel-opis{position:absolute;inset:auto 0 0 0;padding:90px clamp(18px,1.8vw,30px) clamp(20px,1.8vw,30px);background:linear-gradient(to top,rgba(0,0,0,.88),rgba(0,0,0,.55) 55%,transparent)}
+.kafel h3{font-size:clamp(28px,2.3vw,40px)}
+.kafel p{margin:8px 0 0;color:#E4E5E7;font-size:16px;line-height:1.5}
+
+/* fizjoterapia */
+.dwie{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(32px,5vw,96px);align-items:center}
+.foto-rama{margin:0;background:#fff;padding:10px;border:1px solid var(--linia)}
+.foto-rama img{width:100%;cursor:zoom-in}
+.metody{margin:26px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px 22px;font-weight:700}
+.metody li{display:flex;align-items:center}
+.metody li::before{content:"";width:9px;height:2px;background:currentColor;margin-right:10px}
+.problemy{margin-top:clamp(40px,5vw,72px);border-top:1px solid var(--linia);padding-top:clamp(28px,3vw,44px);display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,2fr);gap:clamp(20px,4vw,72px)}
+.problemy h3{font-size:clamp(24px,2vw,32px)}
+.problemy ul{margin:0;padding:0;list-style:none;columns:2;column-gap:clamp(24px,4vw,64px)}
+.problemy li{break-inside:avoid;padding:12px 0;border-bottom:1px solid var(--linia);line-height:1.45}
+
+/* trening */
+.trening-gora{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,96px);align-items:end}
+.korzysci{margin:0;padding:0;list-style:none}
+.korzysci li{padding:14px 0;border-bottom:1px solid var(--linia);line-height:1.5}
+.korzysci b{display:block;font-size:18px}
+.korzysci span{color:var(--tekst2);font-size:16px}
+.pas{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*clamp(12px,1.4vw,24px))/4);gap:clamp(12px,1.4vw,24px);overflow-x:auto;scroll-snap-type:x mandatory;margin-top:clamp(36px,4vw,60px);scrollbar-width:none;cursor:grab;justify-content:center}
+.pas::-webkit-scrollbar{display:none}
+.pas.ciag{cursor:grabbing;scroll-snap-type:none}
+.pas figure{margin:0;scroll-snap-align:start;background:var(--czern)}
+.pas img{width:100%;aspect-ratio:2/3;object-fit:cover;cursor:zoom-in;-webkit-user-drag:none;user-select:none}
+.cytat{margin:clamp(40px,5vw,72px) auto 0;max-width:30em;text-align:center;font:400 clamp(24px,2.2vw,36px)/1.25 'DM Serif Display',serif}
+.cytat footer{font:600 15px/1.4 "Manrope",sans-serif;color:var(--tekst2);margin-top:14px}
+
+/* emocje */
+.emocje-foto{margin:0}
+.emocje-foto img{width:100%;cursor:zoom-in}
+.ciemna p{color:#D2D4D7}
+.ciemna .akapit{margin:18px 0 0;max-width:36em}
+
+/* o mnie */
+.omnie{display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1fr);gap:clamp(32px,5vw,96px);align-items:start}
+.portret{margin:0;position:sticky;top:calc(var(--h) + 24px)}
+.portret img{width:100%;max-width:595px;background:#000}
+.portret figcaption{font:400 clamp(20px,1.6vw,26px)/1.3 'DM Serif Display',serif;margin-top:18px}
+.omnie p{max-width:40em}
+.szkolenia{margin-top:clamp(32px,4vw,52px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,3vw,48px)}
+.szkolenia h3{font-size:22px;margin-bottom:10px}
+.szkolenia ul{margin:0;padding:0;list-style:none}
+.szkolenia li{padding:8px 0;border-bottom:1px solid var(--linia);font-size:15.5px;line-height:1.45}
+details summary{cursor:pointer;font-weight:700;padding:12px 0;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:" +"}
+details[open] summary::after{content:" -"}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(32px,5vw,96px)}
+.dane{margin:28px 0 0;font-size:18px}
+.dane div{padding:14px 0;border-bottom:1px solid var(--linia);display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px}
+.dane dt{color:var(--tekst2);font-size:15px;padding-top:2px}
+.dane dd{margin:0;font-weight:700;overflow-wrap:anywhere}
+.dane a{text-decoration:none;border-bottom:1px solid currentColor}
+form{background:#fff;padding:clamp(22px,2.6vw,40px);border:1px solid var(--linia)}
+form h3{font-size:clamp(24px,2vw,32px);margin-bottom:18px}
+label{display:block;font-weight:700;font-size:14px;margin:14px 0 6px}
+input,textarea{width:100%;font:400 16px/1.4 "Manrope",sans-serif;padding:13px 14px;border:1px solid #BFC3C9;border-radius:0;background:#fff;color:var(--tekst)}
+input:focus,textarea:focus{outline:2px solid var(--czern);outline-offset:0;border-color:var(--czern)}
+textarea{min-height:120px;resize:vertical}
+form .btn{margin-top:20px;width:100%}
+.form-info{font-size:14px;color:var(--tekst2);margin:12px 0 0}
+.mapa{margin-top:clamp(32px,4vw,56px);height:clamp(280px,32vw,420px);background:#E4E6E9;border:1px solid var(--linia)}
+.mapa iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(1)}
+
+/* stopka */
+.stopka{padding:40px 0 calc(28px + env(safe-area-inset-bottom));border-top:1px solid var(--linia);font-size:15px;color:var(--tekst2)}
+.stopka .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr);gap:24px 40px;align-items:start}
+.stopka .marka b{color:var(--tekst)}
+.stopka nav{display:grid;grid-template-columns:1fr 1fr;gap:6px 20px}
+.stopka nav a{text-decoration:none}
+.stopka-dol{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-top:1px solid var(--linia);padding-top:18px;margin-top:8px}
+
+/* pasek na telefonie */
+.mob{display:none}
+
+/* powiekszenie */
+dialog{border:0;padding:0;background:transparent;max-width:96vw;max-height:94vh}
+dialog::backdrop{background:rgba(0,0,0,.9)}
+dialog img{max-width:96vw;max-height:90vh;width:auto;height:auto}
+dialog button{position:fixed;top:12px;right:12px;width:48px;height:48px;border:0;background:#fff;font:400 30px/1 sans-serif;cursor:pointer}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+@media (max-width:1180px){
+  .menu{gap:16px}.menu a{font-size:14px}
+  .marka small{display:none}
+}
+@media (max-width:1024px){
+  :root{--h:62px}
+  .menu{position:fixed;top:var(--h);left:0;right:0;bottom:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:12px clamp(16px,4.2vw,72px) 32px;transform:translateX(100%);visibility:hidden;transition:transform .3s,visibility .3s;overflow-y:auto}
+  .top.otw .menu{transform:none;visibility:visible}
+  .menu a{font:400 28px/1.2 'DM Serif Display',serif;padding:16px 0;border-bottom:1px solid var(--linia)}
+  .menu a:hover{border-color:var(--linia)}
+  #burger{display:block;margin-left:0}
+  .top-tel{margin-left:auto;padding:0;width:46px;height:46px;justify-content:center}
+  .top-tel span{display:none}
+  .marka img{height:36px}
+  .marka b{font-size:20px}
+}
+@media (max-width:860px){
+  .hero{flex-direction:column}
+  .hero-foto{position:relative;height:auto;width:100%;aspect-ratio:auto;flex:1 1 auto;min-height:min(70vw,38svh);-webkit-mask-image:none;mask-image:none}
+  .hero-foto img{position:absolute;inset:0;object-position:22% 35%}
+  .hero-foto::after{content:"";position:absolute;inset:auto 0 0 0;height:38%;background:linear-gradient(to top,var(--studio),transparent)}
+  .hero-in{flex:none;width:var(--wrap);margin:0 auto;padding:4px 0 clamp(22px,4svh,36px)}
+  .hero h1{font-size:clamp(30px,8.4vw,40px)}
+  .h-lead{font-size:16px;margin:12px 0 24px}
+  .hero .btn{width:100%}
+  .kafle{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-inline:calc((100vw - 100%)/-2);padding-inline:calc((100vw - 100%)/2);scroll-padding-inline:calc((100vw - 100%)/2)}
+  .kafle::-webkit-scrollbar{display:none}
+  .kafel{scroll-snap-align:start}
+  .dwie,.trening-gora,.omnie,.kontakt,.problemy{grid-template-columns:minmax(0,1fr)}
+  .problemy ul{columns:1}
+  .pas{grid-auto-columns:64%;justify-content:start;margin-inline:calc((100vw - 100%)/-2);padding-inline:calc((100vw - 100%)/2);scroll-padding-inline:calc((100vw - 100%)/2)}
+  .emocje-foto{order:-1}
+  .portret{position:static;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:18px;align-items:end}
+  .portret figcaption{margin:0;font-size:20px}
+  .szkolenia{grid-template-columns:minmax(0,1fr)}
+  .stopka .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .stopka .marka{grid-column:1/-1}
+  .mob{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:40;background:#fff;border-top:1px solid var(--linia);padding:8px 10px calc(8px + env(safe-area-inset-bottom));gap:8px;transform:translateY(110%);transition:transform .3s}
+  .mob.widac{transform:none}
+  .mob .btn{min-height:48px;padding:0 10px;font-size:15px}
+  .stopka{padding-bottom:calc(90px + env(safe-area-inset-bottom))}
+}
+@media (max-width:420px){
+  .dane div{grid-template-columns:84px minmax(0,1fr)}
+  .dane{font-size:16.5px}
+}
+@media (max-height:700px) and (max-width:860px){
+  .hero h1{font-size:clamp(28px,7.6vw,34px)}
+  .h-lead{font-size:15px;line-height:1.5;margin:10px 0 24px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="pien" viewBox="0 0 12 48"><path d="M6.4 0h4.2v21.5l-4.2 5.2zM1.4 30.3l4.2-5.2V48H1.4z"/></symbol></svg>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="marka" href="#" aria-label="Karolina Kośmider - strona główna">
+      <img src="img/logo.png" width="143" height="199" alt="Logo Karolina Kośmider">
+      <span><b>Karolina Kośmider</b><small>fizjoterapia, trening, emocje</small></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Menu główne">
+      <a href="#fizjoterapia">Fizjoterapia</a>
+      <a href="#trening">Trening</a>
+      <a href="#emocje">Emocje</a>
+      <a href="#o-mnie">O mnie</a>
+      <a href="#szkolenia">Szkolenia</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="top-tel" href="tel:+48513916103" aria-label="Zadzwoń: 513 916 103"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4.2 1.2l2.1 3.3-1.4 1.6c.8 1.9 2.2 3.4 4.1 4.3l1.6-1.4 3.3 2.1-.9 2.9c-6.6-.3-11.6-5.3-11.9-11.9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span>513 916 103</span></a>
+    <button id="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-label="Wstęp" style="padding:0">
+  <figure class="hero-foto">
+    <img src="img/hero-1400.webp" srcset="img/hero-800.webp 800w, img/hero-1400.webp 1400w, img/hero-2000.webp 2000w, img/hero-2800.webp 2800w" sizes="(max-width:860px) 100vw, 150svh" width="2800" height="1867" alt="Karolina Kośmider w białej koszuli na ciemnym tle studia" fetchpriority="high">
+  </figure>
+  <div class="hero-in">
+    <h1>Fizjoterapia i trening personalny w&nbsp;Płazie</h1>
+    <p class="h-lead"><b>Karolina Kośmider, Pani Fizjo-Trener.</b> Trening, fizjoterapia i emocje przenikają się u mnie i tworzą zdrowe, sprawne ciało. Każda osoba jest traktowana indywidualnie.</p>
+    <a class="btn btn-bialy" id="hero-cta" href="#kontakt">Umów wizytę</a>
+  </div>
+</section>
+
+<section id="pomoc">
+  <div class="wrap">
+    <h2><svg class="pien" aria-hidden="true"><use href="#pien"/></svg>W czym mogę Ci pomóc?</h2>
+    <p class="wstep">Pomagam pozbyć się bólu, dodatkowych kilogramów i skutków ciąży i porodu, takich jak rozejście mięśnia prostego brzucha czy nietrzymanie moczu. Pomagam się zrelaksować i uwolnić zablokowane emocje.</p>
+    <div class="kafle">
+      <a class="kafel" href="#fizjoterapia">
+        <img src="img/kafel-fizjo-800.webp" srcset="img/kafel-fizjo-480.webp 480w, img/kafel-fizjo-800.webp 800w, img/kafel-fizjo-1200.webp 1200w" sizes="(max-width:860px) 78vw, 31vw" width="1200" height="1620" alt="Karolina Kośmider ocenia postawę pacjentki" loading="lazy">
+        <div class="kafel-opis"><h3>Fizjoterapia</h3><p>Terapia nerwowo-mięśniowa P-DTR, masaż tkanek głębokich, praca z blizną.</p></div>
+      </a>
+      <a class="kafel" href="#trening">
+        <img src="img/kafel-trening-800.webp" srcset="img/kafel-trening-480.webp 480w, img/kafel-trening-800.webp 800w, img/kafel-trening-1200.webp 1200w" sizes="(max-width:860px) 78vw, 31vw" width="1200" height="1585" alt="Przysiad ze sztangą podczas treningu" loading="lazy">
+        <div class="kafel-opis"><h3>Trening personalny</h3><p>Regularny trening pod moim okiem: siła, kondycja i sprawne ciało.</p></div>
+      </a>
+      <a class="kafel" href="#emocje">
+        <img src="img/kafel-emocje-800.webp" srcset="img/kafel-emocje-480.webp 480w, img/kafel-emocje-800.webp 800w, img/kafel-emocje-1200.webp 1200w" sizes="(max-width:860px) 78vw, 31vw" width="1200" height="1334" alt="Czarno-biały portret, kobieta obejmuje się ramionami" loading="lazy">
+        <div class="kafel-opis"><h3>Emocje</h3><p>Praca metodą kodu emocji: uwolnienie tego, co od lat zablokowane w ciele.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="szary" id="fizjoterapia">
+  <div class="wrap">
+    <div class="dwie">
+      <figure class="foto-rama"><img src="img/fizjo-1400.webp" srcset="img/fizjo-800.webp 800w, img/fizjo-1400.webp 1400w, img/fizjo-2048.webp 2048w" sizes="(max-width:860px) 92vw, 50vw" width="2048" height="1365" alt="Terapia narzędziowa pleców w gabinecie" loading="lazy" data-duze="img/fizjo-2048.webp"></figure>
+      <div>
+        <h2><svg class="pien" aria-hidden="true"><use href="#pien"/></svg>Fizjoterapia: szukam przyczyny bólu</h2>
+        <p class="wstep">Kiedy kręgosłup boli, to często dlatego, że w ciele dzieje się coś innego. Nie ma jednej metody dla każdego, dlatego dobieram technikę do problemu, z którym przychodzisz, żeby trafić w sedno i jak najszybciej zlikwidować dolegliwości.</p>
+        <ul class="metody">
+          <li>P-DTR</li><li>terapia nerwowo-mięśniowa</li><li>masaż tkanek głębokich</li><li>terapia narzędziowa</li><li>flossing</li><li>kinesiotaping</li><li>masaż relaksacyjny</li>
+        </ul>
+      </div>
+    </div>
+    <div class="problemy">
+      <h3>Zgłoś się, jeżeli</h3>
+      <ul>
+        <li>bolą Cię kolana, plecy lub kręgosłup</li>
+        <li>jesteś po porodzie i podejrzewasz rozejście mięśnia prostego brzucha albo masz problem z nietrzymaniem moczu</li>
+        <li>cierpisz na migrenę, szumy uszne lub przewlekły problem z zatokami</li>
+        <li>nie wysypiasz się</li>
+        <li>jesteś po operacji lub zabiegu i chcesz popracować z blizną albo wrócić do sprawności</li>
+        <li>trenujesz i ciągle przytrafiają Ci się kontuzje</li>
+        <li>masz wadę postawy</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="trening">
+  <div class="wrap">
+    <div class="trening-gora">
+      <div>
+        <h2><svg class="pien" aria-hidden="true"><use href="#pien"/></svg>Trening personalny pod moim okiem</h2>
+        <p class="wstep">Możesz przeczytać każdą książkę o treningu i wykupić najdroższy plan. Ale dopiero regularna praca daje efekt, który czujesz na co dzień.</p>
+      </div>
+      <ul class="korzysci">
+        <li><b>Masa energii</b><span>z przyjemnością wstajesz do pracy i jesteś na wysokich obrotach cały dzień</span></li>
+        <li><b>Sprawne ciało</b><span>nawet w mikroskopijnej łazience nie poobijasz się pod prysznicem</span></li>
+        <li><b>Kondycja</b><span>do biegania za dziećmi, za autobusem albo za psem</span></li>
+        <li><b>Piękne kształty</b><span>sukienka lub koszula leży jak na czerwonym dywanie</span></li>
+      </ul>
+    </div>
+    <div class="pas" data-pas>
+      <figure><img src="img/trening-t1-800.webp" srcset="img/trening-t1-480.webp 480w, img/trening-t1-800.webp 800w, img/trening-t1-1200.webp 1200w" sizes="(max-width:860px) 64vw, 24vw" width="1200" height="1800" alt="Wykrok z talerzem obciążeniowym" loading="lazy" data-duze="img/trening-t1-1200.webp"></figure>
+      <figure><img src="img/trening-t2-800.webp" srcset="img/trening-t2-480.webp 480w, img/trening-t2-800.webp 800w, img/trening-t2-1200.webp 1200w" sizes="(max-width:860px) 64vw, 24vw" width="1200" height="1800" alt="Ćwiczenie z kettlebell nad głową" loading="lazy" data-duze="img/trening-t2-1200.webp"></figure>
+      <figure><img src="img/trening-t3-800.webp" srcset="img/trening-t3-480.webp 480w, img/trening-t3-800.webp 800w, img/trening-t3-1200.webp 1200w" sizes="(max-width:860px) 64vw, 24vw" width="1200" height="1801" alt="Trenerka w stroju treningowym, widok z tyłu" loading="lazy" data-duze="img/trening-t3-1200.webp"></figure>
+      <figure><img src="img/trening-t4-800.webp" srcset="img/trening-t4-480.webp 480w, img/trening-t4-800.webp 800w, img/trening-t4-1200.webp 1200w" sizes="(max-width:860px) 64vw, 24vw" width="1200" height="1801" alt="Rozciąganie z rękami nad głową" loading="lazy" data-duze="img/trening-t4-1200.webp"></figure>
+    </div>
+    <blockquote class="cytat">Nigdy nie będziesz bardziej gotowy niż w chwili, kiedy wpadło Ci do głowy, że chcesz coś zmienić.<footer>Ruszaj, ten dzień jest dzisiaj.</footer></blockquote>
+  </div>
+</section>
+
+<section class="ciemna" id="emocje">
+  <div class="wrap dwie">
+    <div>
+      <h2><svg class="pien" aria-hidden="true"><use href="#pien"/></svg>Emocje i kod emocji</h2>
+      <p class="wstep">Emocji nie wybieramy, pojawiają się same. Każda jest ważna i żadna nie trwa wiecznie. Ważne, żeby nie trzymać ich w sobie.</p>
+      <p class="akapit">W gabinecie pracuję metodą kodu emocji. Pozwala ona uwolnić to, co od lat siedzi głęboko w ciele i potrafi rzutować na jego funkcjonowanie. Zablokowane emocje odpowiadają za niepewność, smutek, żal czy niepokój. Kiedy je uwolnisz, do życia wraca radość, a ciało odzyskuje równowagę.</p>
+      <p class="akapit">Jeżeli czujesz, że jest ich w Tobie dużo, to najwyższa pora je uwolnić.</p>
+    </div>
+    <figure class="emocje-foto"><img src="img/emocje-1400.webp" srcset="img/emocje-800.webp 800w, img/emocje-1400.webp 1400w, img/emocje-2048.webp 2048w" sizes="(max-width:860px) 92vw, 50vw" width="2048" height="1365" alt="Karolina Kośmider z rozłożonymi rękami, wyrażająca emocje" loading="lazy" data-duze="img/emocje-2048.webp"></figure>
+  </div>
+</section>
+
+<section id="o-mnie">
+  <div class="wrap omnie">
+    <figure class="portret">
+      <img src="img/portret.webp" width="595" height="765" alt="Portret Karoliny Kośmider" loading="lazy">
+      <figcaption>"Kocham to, co robię. Robię to, co kocham. Pasja jest kluczem do radości."</figcaption>
+    </figure>
+    <div>
+      <h2><svg class="pien" aria-hidden="true"><use href="#pien"/></svg>O mnie</h2>
+      <p class="wstep">Nazywam się Karolina Kośmider. Zakochana w ludzkim ciele, oczarowana życiem i twardo stąpająca po ziemi Pani Fizjo-Trener.</p>
+      <p>Swoją ścieżkę zawodową rozpoczęłam na Akademii Wychowania Fizycznego w Krakowie, broniąc tytuł magistra wychowania fizycznego. Kolejnym etapem były studia Medycyna Sportowa i Fizjoterapia na Akademii Wychowania Fizycznego w Katowicach. Przeszłam drogę od instruktora fitness, przez trenera personalnego i nauczyciela wychowania fizycznego, aż po fizjoterapeutę.</p>
+      <p>Moja praca to moja pasja, a każda osoba, która trafia pod moje skrzydła, jest traktowana indywidualnie. Ciągle się uczę i zagłębiam w tajniki ludzkiego ciała.</p>
+      <div class="szkolenia" id="szkolenia">
+        <div>
+          <h3>Szkolenia z fizjoterapii</h3>
+          <ul>
+            <li>Syntonic Szkolenia Medyczne - P-DTR Basic</li>
+            <li>Femme Medica - certyfikowany terapeuta rozejścia mięśnia prostego brzucha oraz osłabionych mięśni dna miednicy</li>
+            <li>Projekt Masaż - Terapia Nerwowo-Mięśniowa (neurodiagnostyka i terapia)</li>
+            <li>Projekt Masaż - Masaż tkanek głębokich</li>
+            <li>Neuro Projekt - Fundamenty ruchu</li>
+            <li>Neuro Projekt - Neurodiagnostyka i terapia w bólach kolan i kończyny dolnej</li>
+            <li>Neuro Projekt - Neurodiagnostyka i terapia w bólach głowy</li>
+          </ul>
+          <details><summary>Pozostałe szkolenia z fizjoterapii</summary><ul>
+            <li>PFS Diagnostyka Funkcjonalna</li><li>PFS Zdrowy Kręgosłup</li><li>PFS Core Stability Level I</li><li>Kinesiotaping</li><li>PFS Flossing - technika wspomagająca terapię</li>
+          </ul></details>
+        </div>
+        <div>
+          <h3>Trening personalny i fitness</h3>
+          <ul>
+            <li>Kuźnia Trenerów - Basic Personal Trainer</li>
+            <li>Akademia Treningu Siłowego - programowanie treningu siłowego, poziom I</li>
+            <li>PFS Trening funkcjonalny</li>
+            <li>PFS Mobilność i stabilność ze sprzętem</li>
+            <li>Open Mind - Pilates dla kobiet w ciąży i po porodzie</li>
+            <li>Jacek Bilczyński Lifestyle Coach - zdrowa redukcja u kobiet</li>
+            <li>PFS Dietetyka i Suplementacja - poziom I</li>
+          </ul>
+          <details><summary>Pozostałe szkolenia z treningu</summary><ul>
+            <li>Open Mind - Instruktor fitness</li><li>Open Mind - Step Instruktor</li><li>Open Mind - Aerobik Instruktor</li><li>Open Mind - Body Instruktor</li><li>Open Mind - Warsztaty Stretching Powięziowy</li><li>PFS Aerobics Choreography Instructor</li><li>PFS Stretching Instructor</li><li>PFS TBC Full Equipment</li><li>PFS Diagnostyka Funkcjonalna</li><li>PFS Powerband &amp; Miniband</li><li>GT trening</li><li>PFS Kettlebells Training / Taśmy podwieszane</li><li>PFS Fit Ball</li><li>Trening umiejętności społecznych</li>
+          </ul></details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="szary" id="kontakt">
+  <div class="wrap">
+    <div class="kontakt">
+      <div>
+        <h2><svg class="pien" aria-hidden="true"><use href="#pien"/></svg>Umów wizytę</h2>
+        <p class="wstep">Napisz albo zadzwoń i powiedz, w czym mogę Ci pomóc.</p>
+        <dl class="dane">
+          <div><dt>Telefon</dt><dd><a href="tel:+48513916103">513 916 103</a></dd></div>
+          <div><dt>E-mail</dt><dd><a href="mailto:karolinakosmider.pl@gmail.com">karolinakosmider.pl@gmail.com</a></dd></div>
+          <div><dt>Gabinet</dt><dd>ul. Czarnieckiego 6<br>32-552 Płaza</dd></div>
+          <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/karolinakosmiderfizjoterapia" rel="noopener" target="_blank">karolinakosmiderfizjoterapia</a></dd></div>
+        </dl>
+      </div>
+      <form id="formularz" novalidate>
+        <h3>Wiadomość</h3>
+        <label for="f-imie">Imię</label><input id="f-imie" name="imie" autocomplete="given-name">
+        <label for="f-tel">Telefon</label><input id="f-tel" name="telefon" type="tel" autocomplete="tel" inputmode="tel">
+        <label for="f-wiad">W czym mogę pomóc?</label><textarea id="f-wiad" name="wiadomosc"></textarea>
+        <button class="btn btn-czarny" type="submit">Wyślij wiadomość</button>
+        <p class="form-info" id="form-info" aria-live="polite">Odpowiem telefonicznie albo mailowo.</p>
+      </form>
+    </div>
+    <div class="mapa" id="mapa" data-src="https://maps.google.com/maps?q=Czarnieckiego%206%2C%2032-552%20P%C5%82aza&amp;z=15&amp;output=embed" aria-label="Mapa dojazdu"></div>
+  </div>
+</section>
+</main>
+
+<footer class="stopka">
+  <div class="wrap">
+    <a class="marka" href="#"><img src="img/logo.png" width="143" height="199" alt="" loading="lazy"><span><b>Karolina Kośmider</b><small>fizjoterapia, trening, emocje</small></span></a>
+    <div>ul. Czarnieckiego 6,<br><span style="white-space:nowrap">32-552 Płaza</span><br><a href="tel:+48513916103">513 916 103</a></div>
+    <nav aria-label="Stopka"><a href="#fizjoterapia">Fizjoterapia</a><a href="#trening">Trening</a><a href="#emocje">Emocje</a><a href="#o-mnie">O mnie</a><a href="#szkolenia">Szkolenia</a><a href="#kontakt">Kontakt</a></nav>
+    <div class="stopka-dol">
+      <span>&copy; 2026 Karolina Kośmider</span>
+      <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=karolinakosmider.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+    </div>
+  </div>
+</footer>
+
+<div class="mob" id="mob">
+  <a class="btn btn-czarny" href="tel:+48513916103">Zadzwoń</a>
+  <a class="btn" href="#kontakt">Napisz</a>
+</div>
+
+<dialog id="lb"><button type="button" aria-label="Zamknij">&times;</button><img alt=""></dialog>
+
+<script>
+(function(){
+  var top=document.getElementById('top'),bur=document.getElementById('burger');
+  bur.addEventListener('click',function(){var o=top.classList.toggle('otw');bur.setAttribute('aria-expanded',o);bur.setAttribute('aria-label',o?'Zamknij menu':'Otwórz menu');document.body.style.overflow=o?'hidden':''});
+  document.querySelectorAll('#menu a').forEach(function(a){a.addEventListener('click',function(){top.classList.remove('otw');bur.setAttribute('aria-expanded','false');document.body.style.overflow=''})});
+  var mob=document.getElementById('mob'),cta=document.getElementById('hero-cta'),kon=document.getElementById('kontakt');
+  if('IntersectionObserver' in window){
+    var zaCta=false,naKont=false,upd=function(){mob.classList.toggle('widac',zaCta&&!naKont)};
+    new IntersectionObserver(function(e){zaCta=!e[0].isIntersecting&&e[0].boundingClientRect.top<0;upd()}).observe(cta);
+    new IntersectionObserver(function(e){naKont=e[0].isIntersecting;upd()},{rootMargin:'0px 0px -30% 0px'}).observe(kon);
+    var mapa=document.getElementById('mapa');
+    var mo=new IntersectionObserver(function(e){if(e[0].isIntersecting){var f=document.createElement('iframe');f.src=mapa.dataset.src.replace(/&amp;/g,'&');f.title='Mapa: ul. Czarnieckiego 6, Płaza';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';mapa.appendChild(f);mo.disconnect()}},{rootMargin:'300px'});
+    mo.observe(mapa);
+  }
+  document.querySelectorAll('[data-pas]').forEach(function(p){
+    var x0,s0,ruch=false;
+    p.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;x0=e.clientX;s0=p.scrollLeft;ruch=false;p.classList.add('ciag');p.setPointerCapture(e.pointerId)});
+    p.addEventListener('pointermove',function(e){if(x0==null)return;var d=e.clientX-x0;if(Math.abs(d)>4)ruch=true;p.scrollLeft=s0-d});
+    var kon=function(){if(x0==null)return;x0=null;p.classList.remove('ciag')};
+    p.addEventListener('pointerup',kon);p.addEventListener('pointercancel',kon);
+    p.addEventListener('click',function(e){if(ruch){e.preventDefault();e.stopPropagation();ruch=false}},true);
+  });
+  var lb=document.getElementById('lb'),li=lb.querySelector('img');
+  document.querySelectorAll('img[data-duze]').forEach(function(i){i.addEventListener('click',function(){li.src=i.dataset.duze;li.alt=i.alt;lb.showModal()})});
+  lb.addEventListener('click',function(e){if(e.target!==li)lb.close()});
+  document.getElementById('formularz').addEventListener('submit',function(e){e.preventDefault();document.getElementById('form-info').textContent='To podgląd strony - na docelowej stronie formularz wyśle wiadomość prosto na Twój e-mail.'});
+})();
+</script>
+</body>
+</html>
